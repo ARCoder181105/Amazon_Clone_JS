@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="icon" href="./assets/sm-logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="nav-belt">
+        <div class="logo-container">
+            <div class="logo">
+                <a href="./index.html" class="logo-ref">
+                    <img src="./assets/White-Amazon-Logo-PNG-HD-Quality.png" alt="Amazon logo">
+                    <span>.in</span>
+                </a>
+            </div>
+
+            <div class="delivery">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6">
+                        </path>
+                    </svg>
+                    Location
+                </p>
+            </div>
+        </div>
+        <!-- logo done here -->
+
+
+        <div class="search">
+
+            <select name="services" id="service">
+                <option value="">All</option>
+                <option value="1">AWS</option>
+                <option value="2">Prime</option>
+                <option value="3">Food</option>
+
+        </div>
+
+        <input type="text" placeholder="Search Amazon.in">
+        <button><img src="./assets/search.png" alt="search"></button>
+    </div>
+
+
+    <!-- search done here -->
+
+
+
+
+
+    <div class="others">
+
+        <div class="user">
+            <button class="btn1">Login</button>
+            <button class="btn2">SignUp</button>
+        </div>
+        <div class="return">
+            <p>Returns <br> <span>& Orders</span></p>
+        </div>
+
+        <div class="cart">
+            <div class="count-container">
+                <span class="counter">0</span>
+                <span class="cart-logo"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
+                        </path>
+                    </svg></span>
+            </div>
+            <div class="cart-container">
+                <span>Cart</span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Navbar ends here -->
+
+    <div class="content">
+
+
+        <div class="results">
+            <h4>New Arrivals</h4>
+            <h6>Check Out each product page for deals</h6>
+        </div>
+
+
+        <div class="product">
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/iphon1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">Apple Iphone 12 </h1>
+
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$1000</div>
+                        <div class="price-save">Save $20.00 (1%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 15</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                8</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="1">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/microwave.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <!-- <h1 class="product-title">Product Name Goes Here - Model/Version (Color, Size)</h1> -->
+                    <h1 class="product-title">Micorwave Philips</h1>
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$950</div>
+                        <div class="price-save">Save $20.00 (15%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 10</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                9</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="2">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/phone2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <!-- <h1 class="product-title">Product Name Goes Here - Model/Version (Color, Size)</h1> -->
+                    <h1 class="product-title">Samsung M34</h1>
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$400</div>
+                        <div class="price-save">Save $50.00 (17%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 10</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                9</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="3">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/tws1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">JBL TWS </h1>
+
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$120</div>
+                        <div class="price-save">Save $20.00 (17%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 10</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                9</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="4">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/aata.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">Aashirvaad Atta</h1>
+
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$55</div>
+                        <div class="price-save">Save $20.00 (17%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 10</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                9</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="5">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/shoes.png" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">Nike Jordan Air</h1>
+
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$5000</div>
+                        <div class="price-save">Save $20.00 (1%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 15</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                12</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="6">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/shoe2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">Nike Walking Shoes</h1>
+
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$1500</div>
+                        <div class="price-save">Save $20.00 (17%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 10</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                9</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="7">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/addidas.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">Addidas Runnig Shoes</h1>
+
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$999</div>
+                        <div class="price-save">Save $20.00 (17%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 10</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                9</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="8">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <img src="./assets/puma1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">Puma Red Magic</h1>
+
+
+
+                    <hr>
+
+                    <div class="price">
+                        <div class="price-amount">$1800</div>
+                        <div class="price-save">Save $20.00 (17%)</div>
+                    </div>
+
+
+
+                    <div class="delivery-options">
+                        <div class="delivery-option"><strong>FREE delivery</strong> <span class="delivery-date">Friday,
+                                May 10</span></div>
+                        <div class="delivery-option">Or fastest delivery <span class="delivery-date">Thursday, May
+                                9</span></div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="add-to-cart" value="9">Add to Cart</button>
+                        <!-- <button class="buy-now">Buy Now</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <button id="reset-btn">Reset</button>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="icon" href="./assets/sm-logo.jpg">
+    <title>Payments</title>
+</head>
+
+<body>
+
+
+    <div class="payment-container">
+        <h1>CheckOut</h1>
+        <div class="container">
+
+            <div class="shipping">
+                <!-- <h2>Shipping Address</h2> -->
+
+                <div class="address-book">
+                    <h3>Adress Book</h3>
+                    <ol class="address-list">
+
+                    </ol>
+                    <div class="address-option">
+                        <button class="address" data-key='1'><strong>Jane Doe</strong> 419 King's Road
+                            Chelsea,London,SW3 4ND United Kingdom</button>
+                        <br>
+                        <button class="address" data-key='2'><strong>Sarah Donnelly</strong> 1847 Maple Hollow Drive,
+                            Greenfield, OH45123</button>
+                        <br>
+                        <button class="address" data-key='3'><strong>Marcus Linwood</strong> 72 Clearwater Bend,
+                            Riverview, OR 97053</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="payments">
+                <!-- <h2>Payment Methods</h2> -->
+                <div class="select-payment">
+                    <h3>Payment Methods</h3>
+                    <ol class="payment-list">
+                        <li>Visa</li>
+                    </ol>
+                    <div class="payment-option">
+                        <button class="mode" data-key="1">Visa</button>
+                        <button class="mode" data-key="2">MasterCard</button>
+                        <button class="mode" data-key="3">American Express</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="order-container">
+
+            <div class="container-order">
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span class="subtotal">$150.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Delivery Charges</span>
+                        <span class="delivery-charges">$5.00</span>
+                    </div>
+                    <div class="summary-item discount invisible">
+                        <span>Coupon Discount</span>
+                        <span class="coupon-discount">$0</span>
+                    </div>
+                    <div class=" summary-item">
+                        <span>Taxes</span>
+                        <span class="price-taxes">$12.00</span>
+                    </div>
+                    <hr />
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span class="price-summary-total">$157.00</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="place-order">
+                <input type="checkbox" id="coupon-check">
+                <label for="coupon-check">Want to apply Coupon ? </label>
+                <div class="apply-coupon">
+                    <p>Apply Coupon</p>
+                    <div class="coupon">
+                        <input type="text" placeholder="Enter Coupon Code" class="input-coupon">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                </div>
+
+                <button class="final-button">Place Order</button>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script type="module" src="./payment.js"></script>
+</body>
+
+</html>
