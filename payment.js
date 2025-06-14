@@ -75,7 +75,7 @@ applyCouponBtn.addEventListener('click', () => {
     inputCoupon.value = "";
 
     // Update UI
-    couponDiscount.textContent = discountToApply > 0 ? `−₹${discountToApply.toFixed(2)}` : "−₹0.00";
+    couponDiscount.textContent = discountToApply > 0 ? `−$${discountToApply.toFixed(2)}` : "−$0.00";
     summaryTotal.textContent = `₹${(newTotal - discountToApply > 0 ? newTotal : grossPrice + delivery + taxes - discountToApply).toFixed(2)}`;
 });
 
