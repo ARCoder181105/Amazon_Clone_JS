@@ -53,25 +53,32 @@ checkbox.addEventListener('change', () => {
 // Apply coupon logic
 applyCouponBtn.addEventListener('click', () => {
     const enteredCode = inputCoupon.value.trim();
+    let newTotal = grossPrice + delivery + taxes;
+    let discountToApply = 0;
 
     if (enteredCode === "") {
         alert("Please enter a coupon code.");
-        appliedDiscount = 0;
-    }
-    else if (validCouponCode.hasOwnProperty(enteredCode)) {
-        appliedDiscount = validCouponCode[enteredCode];
-        alert(`Coupon applied! You saved ₹${appliedDiscount}`);
+    } else if (validCouponCode.hasOwnProperty(enteredCode)) {
+        discountToApply = validCouponCode[enteredCode];
+        if ((newTotal - discountToApply) < 0) {
+            alert("Coupon can't be applied. Total cannot be negative.");
+            discountToApply=0;
+        } else {
+            newTotal -= discountToApply;
+            alert(`Coupon applied! You saved ₹${discountToApply}`);
+        }
     } else {
         alert("Invalid coupon code.");
-        appliedDiscount = 0;
     }
+
+    // Reset the input field
     inputCoupon.value = "";
 
-    const newTotal = grossPrice + delivery + taxes - appliedDiscount;
-
-    couponDiscount.textContent = `−₹${appliedDiscount.toFixed(2)}`;
-    summaryTotal.textContent = `₹${newTotal.toFixed(2)}`;
+    // Update UI
+    couponDiscount.textContent = discountToApply > 0 ? `−₹${discountToApply.toFixed(2)}` : "−₹0.00";
+    summaryTotal.textContent = `₹${(newTotal - discountToApply > 0 ? newTotal : grossPrice + delivery + taxes - discountToApply).toFixed(2)}`;
 });
+
 
 placeOrderBtn.addEventListener('click', () => {
     // Reset all values
@@ -118,8 +125,8 @@ addressBtns.forEach(btn => {
         const address = addresSet[key];
 
         adressList.innerHTML = '';
-        
-         adressList.innerHTML = `
+
+        adressList.innerHTML = `
     <li><strong>${address.name}</strong></li>
     <li>${address.line1}</li>
     <li>${address.line2}</li>
@@ -130,10 +137,10 @@ addressBtns.forEach(btn => {
 
 const paymentList = document.querySelector('.payment-list');
 const paymentBtn = document.querySelectorAll('.mode');
-paymentList.innerHTML='';
+paymentList.innerHTML = '';
 
-paymentBtn.forEach(btn=>{
-    btn.addEventListener('click',()=>{
+paymentBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
         const key = btn.dataset.key;
         const payment = paymentMode[key];
 
