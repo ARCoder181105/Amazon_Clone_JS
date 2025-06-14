@@ -65,7 +65,7 @@ applyCouponBtn.addEventListener('click', () => {
             discountToApply=0;
         } else {
             newTotal -= discountToApply;
-            alert(`Coupon applied! You saved ₹${discountToApply}`);
+            alert(`Coupon applied! You saved $${discountToApply}`);
         }
     } else {
         alert("Invalid coupon code.");
@@ -76,7 +76,7 @@ applyCouponBtn.addEventListener('click', () => {
 
     // Update UI
     couponDiscount.textContent = discountToApply > 0 ? `−$${discountToApply.toFixed(2)}` : "−$0.00";
-    summaryTotal.textContent = `₹${(newTotal - discountToApply > 0 ? newTotal : grossPrice + delivery + taxes - discountToApply).toFixed(2)}`;
+    summaryTotal.textContent = `$${(newTotal - discountToApply > 0 ? newTotal : grossPrice + delivery + taxes - discountToApply).toFixed(2)}`;
 });
 
 
